@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <body className={poppins.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem forcedTheme={undefined}>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem forcedTheme={undefined}>
           {children}
           <Toaster />
         </ThemeProvider>

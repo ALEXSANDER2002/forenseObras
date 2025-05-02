@@ -24,8 +24,8 @@ export function ModeToggle() {
       if (savedTheme) {
         setTheme(savedTheme)
       } else {
-        // Se não houver tema salvo, usa o tema do sistema
-        setTheme("system")
+        // Se não houver tema salvo, usa o tema claro
+        setTheme("light")
       }
     }
   }, [mounted, setTheme])

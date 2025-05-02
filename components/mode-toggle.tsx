@@ -16,16 +16,22 @@ export function ModeToggle() {
     setMounted(true)
   }, [])
 
-  // Força a aplicação do tema do sistema na montagem inicial
+  // Força a aplicação do tema claro como padrão na montagem inicial
   useEffect(() => {
     if (mounted) {
-      // Verifica se há um tema salvo no localStorage
-      const savedTheme = localStorage.getItem("theme")
-      if (savedTheme) {
-        setTheme(savedTheme)
-      } else {
-        // Se não houver tema salvo, usa o tema claro
+      try {
+        // Verificação segura para evitar erros em SSR
+        const savedTheme = typeof window !== 'undefined' ? localStorage.getItem("theme") : null
+        if (savedTheme) {
+          setTheme(savedTheme)
+        } else {
+          // Se não houver tema salvo, usa o tema claro
+          setTheme("light")
+        }
+      } catch (error) {
+        // Fallback seguro se ocorrer algum erro
         setTheme("light")
+        console.error("Erro ao acessar localStorage:", error)
       }
     }
   }, [mounted, setTheme])
@@ -39,6 +45,7 @@ export function ModeToggle() {
     }
   }
 
+  // Renderização segura para SSR
   if (!mounted) {
     return (
       <Button variant="ghost" size="icon" disabled className="opacity-70">

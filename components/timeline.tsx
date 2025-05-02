@@ -146,7 +146,7 @@ export function Timeline() {
                                 src={
                                   obra.fotos && obra.fotos.length > 0
                                     ? obra.fotos[0]
-                                    : getDefaultImage(obra.id)
+                                    : `/images/obras/${getDefaultImage(obra.id)}`
                                 }
                                 alt={obra.titulo}
                                 fill
@@ -240,16 +240,16 @@ export function Timeline() {
 function getDefaultImage(id: string): string {
   switch (id) {
     case "1":
-      return "https://mapa-da-obra-producao.s3.amazonaws.com/wp-content/uploads/2018/09/assessoria-de-obras.jpg"
+      return "ponte-1.jpg"
     case "2":
-      return "https://www.sydle.com/blog/assets/post/gestao-de-obras-64a337650efb3b42f75360fe/gestao-de-obras.webp"
+      return "escola-1.jpg"
     case "3":
-      return "https://ctcinfra.com.br/wp-content/uploads/2023/07/obras-industriais-1-1024x643.png"
+      return "pavimentacao-3.png"
     case "4":
-      return "https://ctcinfra.com.br/wp-content/uploads/2023/07/construcao-industrial-1024x540.jpg"
+      return "hospital-1.png"
     case "5":
-      return "https://mapa-da-obra-producao.s3.amazonaws.com/wp-content/uploads/2018/09/assessoria-de-obras.jpg"
+      return "praca-1.png"
     default:
-      return "https://ctcinfra.com.br/wp-content/uploads/2023/07/construcao-industrial-1024x540.jpg"
+      return "default-cover.png"
   }
 }

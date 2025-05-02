@@ -40,7 +40,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 45000000,
     valorAditivos: 5800000,
     responsavel: "Secretaria Municipal de Obras",
-    fotos: ["https://mapa-da-obra-producao.s3.amazonaws.com/wp-content/uploads/2018/09/assessoria-de-obras.jpg"],
+    fotos: ["/images/obras/ponte-1.jpg", "/images/obras/ponte-2.jpg", "/images/obras/ponte-3.jpg"],
     documentos: [
       { id: "doc1", nome: "Projeto Executivo da Ponte.pdf" },
       { id: "doc2", nome: "Licença Ambiental SEMA-PA.pdf" },
@@ -60,7 +60,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 2850000,
     valorAditivos: 320000,
     responsavel: "Secretaria Municipal de Educação",
-    fotos: ["https://www.sydle.com/blog/assets/post/gestao-de-obras-64a337650efb3b42f75360fe/gestao-de-obras.webp"],
+    fotos: ["/images/obras/escola-1.jpg", "/images/obras/escola-2.png"],
     documentos: [
       { id: "doc4", nome: "Projeto de Reforma Escolar.pdf" },
       { id: "doc5", nome: "Termo de Entrega e Recebimento.pdf" },
@@ -79,7 +79,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 12500000,
     valorAditivos: 1800000,
     responsavel: "Secretaria Municipal de Obras",
-    fotos: ["https://ctcinfra.com.br/wp-content/uploads/2023/07/obras-industriais-1-1024x643.png"],
+    fotos: ["/images/obras/pavimentacao-1.png", "/images/obras/pavimentacao-2.png", "/images/obras/pavimentacao-3.png"],
     documentos: [
       { id: "doc6", nome: "Projeto de Pavimentação.pdf" },
       { id: "doc7", nome: "Relatório de Paralisação.pdf" },
@@ -98,7 +98,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 78000000,
     valorAditivos: 0,
     responsavel: "Secretaria Municipal de Saúde",
-    fotos: ["https://ctcinfra.com.br/wp-content/uploads/2023/07/construcao-industrial-1024x540.jpg"],
+    fotos: ["/images/obras/hospital-1.png", "/images/obras/hospital-2.png", "/images/obras/hospital-3.png"],
     documentos: [
       { id: "doc8", nome: "Projeto Arquitetônico do Hospital.pdf" },
       { id: "doc9", nome: "Estudo de Impacto Ambiental.pdf" },
@@ -138,7 +138,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 8500000,
     valorAditivos: 450000,
     responsavel: "Secretaria Municipal de Saúde",
-    fotos: ["https://ctcinfra.com.br/wp-content/uploads/2023/07/construcao-industrial-1024x540.jpg"],
+    fotos: ["/images/obras/hospital-1.png"],
     documentos: [
       { id: "doc13", nome: "Projeto Básico UPA 24h.pdf" },
       { id: "doc14", nome: "Contrato de Execução 078/2023.pdf" },
@@ -157,7 +157,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 3200000,
     valorAditivos: 180000,
     responsavel: "Secretaria Municipal de Educação",
-    fotos: ["https://www.sydle.com/blog/assets/post/gestao-de-obras-64a337650efb3b42f75360fe/gestao-de-obras.webp"],
+    fotos: ["/images/obras/escola-1.jpg"],
     documentos: [
       { id: "doc15", nome: "Projeto Padrão FNDE.pdf" },
       { id: "doc16", nome: "Termo de Recebimento Definitivo.pdf" },
@@ -176,7 +176,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 15800000,
     valorAditivos: 0,
     responsavel: "Secretaria Municipal de Obras",
-    fotos: ["https://ctcinfra.com.br/wp-content/uploads/2023/07/obras-industriais-1-1024x643.png"],
+    fotos: ["/images/obras/pavimentacao-3.png"],
     documentos: [
       { id: "doc17", nome: "Projeto Executivo de Drenagem.pdf" },
       { id: "doc18", nome: "Estudo Hidrológico.pdf" },
@@ -195,7 +195,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 22500000,
     valorAditivos: 1200000,
     responsavel: "Secretaria Municipal de Infraestrutura",
-    fotos: ["https://mapa-da-obra-producao.s3.amazonaws.com/wp-content/uploads/2018/09/assessoria-de-obras.jpg"],
+    fotos: ["/images/obras/pavimentacao-1.png"],
     documentos: [
       { id: "doc19", nome: "Projeto Arquitetônico Terminal.pdf" },
       { id: "doc20", nome: "Estudo de Impacto de Tráfego.pdf" },
@@ -234,7 +234,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 4200000,
     valorAditivos: 0,
     responsavel: "Secretaria Municipal de Mobilidade Urbana",
-    fotos: ["https://ctcinfra.com.br/wp-content/uploads/2023/07/obras-industriais-1-1024x643.png"],
+    fotos: ["/images/obras/pavimentacao-2.png"],
     documentos: [
       { id: "doc24", nome: "Projeto Executivo Ciclovia.pdf" },
       { id: "doc25", nome: "Plano de Mobilidade Urbana.pdf" },
@@ -291,7 +291,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 7800000,
     valorAditivos: 350000,
     responsavel: "Secretaria Municipal de Educação",
-    fotos: ["https://www.sydle.com/blog/assets/post/gestao-de-obras-64a337650efb3b42f75360fe/gestao-de-obras.webp"],
+    fotos: ["/images/obras/escola-2.png"],
     documentos: [
       { id: "doc30", nome: "Projeto Executivo Escola.pdf" },
       { id: "doc31", nome: "Cronograma Físico-Financeiro.pdf" },
@@ -310,7 +310,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 8500000,
     valorAditivos: 620000,
     responsavel: "Secretaria Municipal de Obras",
-    fotos: ["https://mapa-da-obra-producao.s3.amazonaws.com/wp-content/uploads/2018/09/assessoria-de-obras.jpg"],
+    fotos: ["/images/obras/pavimentacao-1.png"],
     documentos: [
       { id: "doc32", nome: "Projeto de Pavimentação.pdf" },
       { id: "doc33", nome: "Termo de Recebimento.pdf" },

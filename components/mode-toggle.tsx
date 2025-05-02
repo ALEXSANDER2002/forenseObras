@@ -16,26 +16,6 @@ export function ModeToggle() {
     setMounted(true)
   }, [])
 
-  // Força a aplicação do tema claro como padrão na montagem inicial
-  useEffect(() => {
-    if (mounted) {
-      try {
-        // Verificação segura para evitar erros em SSR
-        const savedTheme = typeof window !== 'undefined' ? localStorage.getItem("theme") : null
-        if (savedTheme) {
-          setTheme(savedTheme)
-        } else {
-          // Se não houver tema salvo, usa o tema claro
-          setTheme("light")
-        }
-      } catch (error) {
-        // Fallback seguro se ocorrer algum erro
-        setTheme("light")
-        console.error("Erro ao acessar localStorage:", error)
-      }
-    }
-  }, [mounted, setTheme])
-
   // Função para alternar diretamente entre temas claro e escuro
   const toggleTheme = () => {
     if (theme === "dark") {

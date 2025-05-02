@@ -40,7 +40,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 45000000,
     valorAditivos: 5800000,
     responsavel: "Secretaria Municipal de Obras",
-    fotos: ["/images/obras/ponte-1.jpg", "/images/obras/ponte-2.jpg", "/images/obras/ponte-3.jpg"],
+    fotos: ["https://mapa-da-obra-producao.s3.amazonaws.com/wp-content/uploads/2018/09/assessoria-de-obras.jpg"],
     documentos: [
       { id: "doc1", nome: "Projeto Executivo da Ponte.pdf" },
       { id: "doc2", nome: "Licença Ambiental SEMA-PA.pdf" },
@@ -60,7 +60,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 2850000,
     valorAditivos: 320000,
     responsavel: "Secretaria Municipal de Educação",
-    fotos: ["/images/obras/escola-1.jpg", "/images/obras/escola-2.png"],
+    fotos: ["https://www.sydle.com/blog/assets/post/gestao-de-obras-64a337650efb3b42f75360fe/gestao-de-obras.webp"],
     documentos: [
       { id: "doc4", nome: "Projeto de Reforma Escolar.pdf" },
       { id: "doc5", nome: "Termo de Entrega e Recebimento.pdf" },
@@ -79,7 +79,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 12500000,
     valorAditivos: 1800000,
     responsavel: "Secretaria Municipal de Obras",
-    fotos: ["/images/obras/pavimentacao-1.png", "/images/obras/pavimentacao-2.png", "/images/obras/pavimentacao-3.png"],
+    fotos: ["https://ctcinfra.com.br/wp-content/uploads/2023/07/obras-industriais-1-1024x643.png"],
     documentos: [
       { id: "doc6", nome: "Projeto de Pavimentação.pdf" },
       { id: "doc7", nome: "Relatório de Paralisação.pdf" },
@@ -98,7 +98,7 @@ const obrasIniciais: Obra[] = [
     valorInicial: 78000000,
     valorAditivos: 0,
     responsavel: "Secretaria Municipal de Saúde",
-    fotos: ["/images/obras/hospital-1.png", "/images/obras/hospital-2.png", "/images/obras/hospital-3.png"],
+    fotos: ["https://ctcinfra.com.br/wp-content/uploads/2023/07/construcao-industrial-1024x540.jpg"],
     documentos: [
       { id: "doc8", nome: "Projeto Arquitetônico do Hospital.pdf" },
       { id: "doc9", nome: "Estudo de Impacto Ambiental.pdf" },
